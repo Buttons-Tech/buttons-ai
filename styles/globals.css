@@ -1,0 +1,7 @@
+/* @tailwind base; */
+/* @import "tailwindcss/preflight"
+
+@tailwind utilities; */
+
+/* Load Inter font globally (alternatively use next/font) */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
