@@ -7,7 +7,7 @@ export const images = [
         src: '/img/DB.jpg',
         alt: 'DB Image',
         title: 'DreamBox' ,
-        desc: 'Creative Technology Academy.'
+        desc: 'A Creative Teachnology school for the next generation of innovators. Dreambox Clubs:Early Years | Junior | Senior  Subjects: ICT | Coding | Robotics | Mathematics | English | Design | Creativity'
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const images = [
     src: '/img/LH.png',
     alt: 'LH Image',
     title: 'LoudHouse' ,
-    desc: 'Smoke shop.'
+    desc: ' Smoke shop and accessories along with loud music playlist suggestions. lighters, hookahs, lightings, wraps and grinders. We have got you covered'
 },
 {
     id: 4,
@@ -35,13 +35,13 @@ export const images = [
     src: '/img/WPr.jpg',
     alt: 'WP Image',
     title: 'WashPro' ,
-    desc: 'Mobile Car Wash.'
+    desc: 'Mobile luxury shine for your car and your house. with just one tap, get your vehicles cleaned regularly and house laundry done '
 },
 {
     id: 6,
     src: '/img/TX.jpg',
     alt: 'TX Image',
     title: 'TripperX' ,
-    desc: 'Best Trip Ever!'
+    desc: 'Enjoy this festive season. Visit top places in Africa with style and Elegance. We give you trips and EXTRA The flight, the Ride, the accommodation, the events, the tours, everything taken care off. We allow you to focus on you, family and memories'
 },
 ]
