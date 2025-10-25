@@ -242,7 +242,7 @@ const Home: FC = () => {
             <section id="services" className="py-24 bg-white" style={{ backgroundColor: 'white' }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h3 className={`text-4xl ${HEADING_CLASSES} text-center mb-4`}>
-                        Our Integrated Services
+                        Our Tech Services
                     </h3>
                     <p className={`text-center mb-16 max-w-3xl mx-auto ${SUBTITLE_CLASSES}`}>
                         From concept to deployment, we provide the full technology stack tailored for International institutions and businesses.
@@ -252,36 +252,45 @@ const Home: FC = () => {
 
                         {/* 1. DIGITAL DESIGNS & MEDIA */}
                         {/* Uses Green border and text primary for card content */}
-                        <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
-                            <div className="text-primary mb-4">
-                                <DesignIcon />
+                        <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                            <div className="text-primary mb-4 overflow-hidden rounded-t-2xl">
+                                <Image src="/img/digital-design.jpg" alt="Design Icon" width={200} height={100} className='w-full h-[4rem] object-cover' />
                             </div>
+                            <div className='px-8 pb-8'>
+
                             <h4 className="text-2xl font-bold mb-3 text-charcoal">Digital Designs & UX</h4>
                             <p className="text-gray-600">
                                 High-impact **UI/UX design**, modern branding, and professional media assets. We build digital identity that commands attention.
                             </p>
+                            </div>
                         </div>
 
                         {/* 2. CUSTOM SOFTWARE & AI */}
-                        <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
-                            <div className="text-primary mb-4">
-                                <SoftwareIcon />
+                        <div className="bg-white  rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                            <div className="text-primary mb-4 overflow-hidden rounded-t-2xl">
+                            <Image src="/img/software.jpg" alt="Design Icon" width={200} height={100} className='w-full h-[4rem] object-cover' />
                             </div>
+                            <div className='px-8 pb-8'>
+
                             <h4 className="text-2xl font-bold mb-3 text-charcoal">Custom AI Software</h4>
                             <p className="text-gray-600">
                                 Bespoke, scalable **AI-integrated applications**. Custom development for complex challenges, from logistics to resource management.
                             </p>
+                            </div>
                         </div>
 
                         {/* 3. PREMIUM GADGETS & HARDWARE */}
-                        <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
-                            <div className="text-primary mb-4">
-                                <GadgetsIcon />
+                        <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                            <div className="text-primary mb-4 overflow-hidden rounded-t-2xl">
+                                <Image src="/img/GADGETS1.webp" alt="Design Icon" width={200} height={100} className='w-full h-[4rem] object-cover' />
                             </div>
+                            <div className='px-8 pb-8'>
+
                             <h4 className="text-2xl font-bold mb-3 text-charcoal">Premium Gadgets & Supply</h4>
                             <p className="text-gray-600">
                                 Sourcing and distribution of high-quality technology hardware: advanced **Security Cameras**, **Drones**, and specialized equipment.
                             </p>
+                            </div>
                         </div>
                     </div>
                 </div>
