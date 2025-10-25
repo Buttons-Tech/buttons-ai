@@ -1,6 +1,8 @@
 'use client'; // Required for using React Hooks
 
+import Image from 'next/image';
 import React, { useState, useCallback, FC, FormEvent, useEffect } from 'react';
+import washpro from '../public/image/washpro.jpeg';
 
 // --- BRANDING & DESIGN SYSTEM (Pulled from Design Brief) ---
 const COLOR_PRIMARY = '#228B22'; // Forest Green (Action/CTA)
@@ -63,13 +65,13 @@ const HeroSlider: FC = () => {
                     {/* <p className="text-3xl sm:text-5xl font-black text-white/80 tracking-widest uppercase">
                         The 12 Month Strategy:
                     </p> */}
-                    <h2 className="text-6xl sm:text-9xl font-black text-white leading-none tracking-tight shadow-text">
-                        #MakeItHappen!
+                    <h2 className="text-6xl sm:text-9xl  font-black text-green-300 leading-none tracking-tight shadow-text">
+                        #HourOfTech
                     </h2>
                     <p className="text-xl sm:text-3xl font-light text-primary/90 tracking-widest pt-4">
                         @buttons-ai
                     </p>
-                    <a href="#contact" className={`mt-12 inline-block font-bold py-4 px-12 rounded-full text-lg shadow-2xl shadow-green-500/50 hover:shadow-green-700/70 ${ctaButtonClasses}`}>
+                    <a href="#contact" className={`mt-12 border border-green-300 inline-block font-bold py-4 px-12 rounded-full text-lg shadow-2xl shadow-green-500/50 hover:shadow-green-700/70 ${ctaButtonClasses}`}>
                         Register Here
                     </a>
                 </div>
@@ -240,10 +242,10 @@ const Home: FC = () => {
             <section id="services" className="py-24 bg-white" style={{ backgroundColor: 'white' }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h3 className={`text-4xl ${HEADING_CLASSES} text-center mb-4`}>
-                        Our Integrated Service Pillars
+                        Our Integrated Services
                     </h3>
                     <p className={`text-center mb-16 max-w-3xl mx-auto ${SUBTITLE_CLASSES}`}>
-                        From concept to deployment, we provide the full technology stack tailored for African institutions and businesses.
+                        From concept to deployment, we provide the full technology stack tailored for International institutions and businesses.
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -290,7 +292,7 @@ const Home: FC = () => {
             <section id="solutions" className="py-24 bg-base" style={{ backgroundColor: COLOR_BACKGROUND_BASE }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h3 className={`text-4xl ${HEADING_CLASSES} text-center mb-4`}>
-                        Solutions Built for Your World
+                        Our <span className='underline '>Solutions</span> Buttons
                     </h3>
                     <p className={`text-center mb-16 max-w-3xl mx-auto ${SUBTITLE_CLASSES}`}>
                         We address specific, high-stakes operational needs across various sectors.
@@ -299,25 +301,72 @@ const Home: FC = () => {
                     <div className="grid md:grid-cols-2 gap-10 items-center">
                         
                         {/* Example 1: Government/Logistics */}
-                        <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
+                        {/* <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
                             <h4 className="text-2xl font-bold mb-3 text-charcoal">E-Logistics & Public Services</h4>
                             <p className="text-gray-600 mb-4">
                                 Developing an **Uber-like ride-hailing app** for state government use, optimizing vehicle allocation and public service delivery through geo-fencing and AI routing.
-                            </p>
+                            </p> */}
                             {/* Retaining soft green tag color */}
-                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Custom Software</span>
-                        </div>
+                            {/* <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Custom Software</span>
+                        </div> */}
 
                         {/* Example 2: Social Impact / NGO */}
-                        <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
+                        {/* <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
                             <h4 className="text-2xl font-bold mb-3 text-charcoal">Ethical Fund Disbursement</h4>
                             <p className="text-gray-600 mb-4">
                                 Specialized software for NGOs and Churches to manage, track, and securely disburse funds to target groups, like **out-of-school children**, ensuring transparency and accountability.
+                            </p> */}
+                            {/* Retaining soft green tag color */}
+                            {/* <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">AI & Software</span>
+                        </div> */}
+                        
+                        {/* Example 3: washpro */}
+                        <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
+                            <Image src={washpro} alt="washpro" width={150} height={100} className='rounded-3xl '/>
+                            <h4 className="text-2xl font-bold mb-3 text-charcoal">WASHPRO</h4>
+                            <p className="text-gray-600 mb-4">
+                                Mobile luxury shine for your car and your house. with just one tap, get your vehicles cleaned regularly
+                                and house laundry done 
                             </p>
                             {/* Retaining soft green tag color */}
-                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">AI & Software</span>
+                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Cleaning Services</span>
                         </div>
-                        
+
+                        {/* Example 3: LoudHouse */}
+                        <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
+                            <Image src="/image/loudhouse.jpeg" alt="LoudHouse" width={75} height={70} className='rounded-3xl '/>
+                            <h4 className="text-2xl font-bold mb-3 text-charcoal">LOUDHOUSE</h4>
+                            <p className="text-gray-600 mb-4">
+                                <span className='text-green-600'>18+</span>  Smoke shop and accessories along with loud music playlist suggestions. lighters, hookahs, lightings, wraps and grinders. We have got you covered
+                            </p>
+                            {/* Retaining soft green tag color */}
+                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Lifestyle</span>
+                        </div>
+
+                        {/* Example 3: Tripper */}
+                        <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
+                            <Image src="/image/Tripper.jpeg" alt="Tripper" width={140} height={100} className='rounded-3xl '/>
+                            <h4 className="text-2xl font-bold mb-3 text-charcoal">TRIPPER X</h4>
+                            <p className="text-gray-600 mb-4">
+                                Enjoy this festive season. Visit top places in Africa with style and Elegance. We give you trips and <span className='text-green-600'>EXTRA </span> 
+                                The flight, the Ride, the accommodation, the events, the tours, everything taken care off. We allow you to focus on you, family and memories
+                            </p>
+                            {/* Retaining soft green tag color */}
+                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Tourism & Events</span>
+                        </div>
+
+                        {/* Example 3: Tripper */}
+                        <div className="p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-primary">
+                            <Image src="/image/Dreambox.png" alt="Tripper" width={140} height={100} className='rounded-3xl '/>
+                            <h4 className="text-2xl font-bold mb-3 text-charcoal">Dreambox</h4>
+                            <p className="text-gray-600 mb-4">
+                                A Creative Teachnology school for the next generation of innovators. Dreambox Clubs: <span>Early Years | Junior | Senior </span> 
+                                Subjects: <span>ICT | Coding | Robotics | Mathematics | English | Design | Creativity</span>
+                            </p>
+                            {/* Retaining soft green tag color */}
+                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Education</span>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -373,17 +422,17 @@ const Home: FC = () => {
                     
                     {/* Form uses Secondary Walnut Brown for sophisticated contrast */}
                     <form onSubmit={handleSubmit} className="space-y-6 max-w-lg mx-auto p-8 rounded-xl bg-secondary shadow-2xl" style={{ backgroundColor: COLOR_SECONDARY }}>
-                        <input type="text" placeholder="Your Full Name" className="w-full p-4 rounded-xl text-gray-900 focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" required />
-                        <input type="email" placeholder="Work Email" className="w-full p-4 rounded-xl text-gray-900 focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" required />
+                        <input type="text" placeholder="Your Full Name" className="w-full p-4 rounded-xl text-white border border-green-300 focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" required />
+                        <input type="email" placeholder="Work Email" className="w-full p-4 rounded-xl text-white border border-green-300 focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" required />
                         
                         {/* Service Selection Dropdown */}
                         <div className="relative">
                             <select 
-                                className="w-full p-4 rounded-xl text-gray-900 appearance-none focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" 
+                                className="w-full p-4 rounded-xl text-white border border-green-300 appearance-none focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" 
                                 required
                                 defaultValue="" 
                             >
-                                <option value="" disabled>I am interested in...</option>
+                                <option value="" className='text-black hover:text' disabled>I am interested in...</option>
                                 <option value="design">Digital Designs & UX</option>
                                 <option value="software">Custom AI Software</option>
                                 <option value="gadgets">Premium Gadgets & Supply</option>
@@ -392,10 +441,10 @@ const Home: FC = () => {
                             <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                         </div>
 
-                        <textarea placeholder="Describe your biggest need (e.g., I need a fund disbursement software)" rows={4} className="w-full p-4 rounded-xl text-gray-900 focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" required></textarea>
+                        <textarea placeholder="Describe your biggest need (e.g., I need a fund disbursement software)" rows={4} className="w-full p-4 rounded-xl border border-green-300  text-white focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-200" required></textarea>
                         
                         {/* Button uses primary Green defined in ctaButtonClasses */}
-                        <button type="submit" className={`w-full font-bold py-4 rounded-xl text-lg shadow-xl shadow-green-500/30 ${ctaButtonClasses}`}>
+                        <button type="submit" className={`w-full font-bold py-4 rounded-xl bg-green-300 text-black text-lg shadow-xl shadow-green-500/30 `}>
                             Send Request & Get a Quote
                         </button>
                     </form>
