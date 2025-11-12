@@ -11,6 +11,15 @@
   --font-sans: var(--font-geist-sans);
   
 }
+ @layer base {
+      .font-outline-2 {
+        -webkit-text-stroke: 2px black;
+      }
+      .font-outline-4 {
+        -webkit-text-stroke: 4px black;
+      }
+      /* You can add more variations for different colors or widths */
+    }
 
 @media (prefers-color-scheme: dark) {
   :root {
