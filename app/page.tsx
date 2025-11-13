@@ -5,6 +5,8 @@ import React, { useState, useCallback, FC, FormEvent, useEffect } from "react";
 import washpro from "../public/image/washpro.jpeg";
 import ProductCard from "./components/ProductCard";
 import ProcessCard from "./components/ProcessCard";
+import Team from "./components/Team";
+import JoinUs from "./components/JoinUs";
 
 // --- BRANDING & DESIGN SYSTEM (Pulled from Design Brief) ---
 const COLOR_PRIMARY = "#228B22"; // Forest Green (Action/CTA)
@@ -118,7 +120,7 @@ const HeroSlider: FC = () => {
       id: 2,
       content: (
         <div className="flex flex-col items-center justify-center h-full">
-          <h2 className={`text-[2rem] md:text-7xl ${HEADING_CLASSES} mx-auto`}>
+          <h2 className={`text-[2rem]  ${HEADING_CLASSES} mx-auto`}>
             Stop Talking
           </h2>
           <span
@@ -518,8 +520,14 @@ const Home: FC = () => {
             <ProcessCard />
           </div>
         </div>
-      </section>
 
+      </section>
+      <section id="team">
+              <Team/>
+      </section>
+      <section id="team">
+              <JoinUs />
+      </section>
       {/* CTA / Contact Section - Enhanced Contrast (Deep Slate and Walnut Brown) */}
       <section
         id="contact"
