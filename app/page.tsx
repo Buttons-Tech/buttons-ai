@@ -95,16 +95,16 @@ const HeroSlider: FC = () => {
     {
       id: 1,
       content: (
-      <div className="w-full h-full flex items-center justify-center">
-        <div className="relative w-full h-full max-h-[600px] sm:max-h-[700px] flex items-center justify-center">
-        <Image
-          src="/img/AAAA.jpg"
-          alt="#MakeItHappen Campaign"
-          fill
-          className="object-contain"
-        />
+        <div className="w-full h-full flex items-center justify-center">
+          <div className="relative w-full h-full max-h-[600px] sm:max-h-[700px] flex items-center justify-center">
+            <Image
+              src="/img/AAAA.jpg"
+              alt="#MakeItHappen Campaign"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
-      </div>
       ),
       // Background is the generated Afro/Futuristic image
       bgStyle: {
