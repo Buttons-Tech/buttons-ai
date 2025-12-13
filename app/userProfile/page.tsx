@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 
 // --- TypeScript Interface for Profile Data ---
@@ -105,7 +106,9 @@ export default function App(): React.ReactElement {
               
               {/* Profile Image */}
               <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-indigo-300 shadow-md">
-                <img
+                <Image
+                width={200}
+                height={200}
                   src={profile.image}
                   alt={`Profile picture of ${profile.name}`}
                   className="w-full h-full object-cover"

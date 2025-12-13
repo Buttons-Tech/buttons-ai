@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useState, useCallback, FC, FormEvent, useEffect } from "react";
-import washpro from "../public/image/washpro.jpeg";
+// import washpro from "../public/image/washpro.jpeg";
 import ProductCard from "./components/ProductCard";
 import ProcessCard from "./components/ProcessCard";
 import Team from "./components/Team";
@@ -30,56 +30,56 @@ const ctaButtonClasses: string = `transition duration-300 shadow-xl hover:shadow
 const CAMPAIGN_BG_IMAGE = "/img/AAAA.jpg";
 
 // --- SVG ICONS ---
-const DesignIcon: FC = () => (
-  // Stroke color set dynamically to primary color
-  <svg
-    className={`svg-icon w-8 h-8 stroke-2 text-[${COLOR_PRIMARY}]`}
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M10 20l4-16m4 4l4 4m-4-4l-4 4m0 0l-4 4m4-4l4-4m-4 4l-4-4m-4 4l-4 4m4-4l-4-4"
-    ></path>
-  </svg>
-);
+// const DesignIcon: FC = () => (
+//   // Stroke color set dynamically to primary color
+//   <svg
+//     className={`svg-icon w-8 h-8 stroke-2 text-[${COLOR_PRIMARY}]`}
+//     fill="none"
+//     stroke="currentColor"
+//     viewBox="0 0 24 24"
+//     xmlns="http://www.w3.org/2000/svg"
+//   >
+//     <path
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       d="M10 20l4-16m4 4l4 4m-4-4l-4 4m0 0l-4 4m4-4l4-4m-4 4l-4-4m-4 4l-4 4m4-4l-4-4"
+//     ></path>
+//   </svg>
+// );
 
-const SoftwareIcon: FC = () => (
-  // Stroke color set dynamically to primary color
-  <svg
-    className={`svg-icon w-8 h-8 stroke-2 text-[${COLOR_PRIMARY}]`}
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M9.75 17L9 20l-1.5 1h5.25v-2.25M15 17v2.25A2.25 2.25 0 0112.75 21H6.75A2.25 2.25 0 014.5 18.75V5.25A2.25 2.25 0 016.75 3h4.94L18.75 9V17H15z"
-    ></path>
-  </svg>
-);
+// const SoftwareIcon: FC = () => (
+//   // Stroke color set dynamically to primary color
+//   <svg
+//     className={`svg-icon w-8 h-8 stroke-2 text-[${COLOR_PRIMARY}]`}
+//     fill="none"
+//     stroke="currentColor"
+//     viewBox="0 0 24 24"
+//     xmlns="http://www.w3.org/2000/svg"
+//   >
+//     <path
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       d="M9.75 17L9 20l-1.5 1h5.25v-2.25M15 17v2.25A2.25 2.25 0 0112.75 21H6.75A2.25 2.25 0 014.5 18.75V5.25A2.25 2.25 0 016.75 3h4.94L18.75 9V17H15z"
+//     ></path>
+//   </svg>
+// );
 
-const GadgetsIcon: FC = () => (
-  // Stroke color set dynamically to primary color
-  <svg
-    className={`svg-icon w-8 h-8 stroke-2 text-[${COLOR_PRIMARY}]`}
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 15M2 17V7a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z"
-    ></path>
-  </svg>
-);
+// const GadgetsIcon: FC = () => (
+//   // Stroke color set dynamically to primary color
+//   <svg
+//     className={`svg-icon w-8 h-8 stroke-2 text-[${COLOR_PRIMARY}]`}
+//     fill="none"
+//     stroke="currentColor"
+//     viewBox="0 0 24 24"
+//     xmlns="http://www.w3.org/2000/svg"
+//   >
+//     <path
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 15M2 17V7a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z"
+//     ></path>
+//   </svg>
+// );
 
 // --- SLIDER COMPONENT ---
 interface Slide {

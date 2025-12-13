@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState, useEffect, useCallback } from 'react';
 
 // --- TypeScript Interfaces ---
@@ -114,10 +115,13 @@ const TeamCard: React.FC<TeamCardProps> = ({ member, isCurrent }) => {
 
         {/* Image & Position (Left/Top) */}
         <div className="flex-shrink-0 w-32 h-32 rounded-full overflow-hidden mb-4 md:mb-0 md:mr-6 border-4 border-indigo-400/70 shadow-inner">
-          <img
+          <Image
             src={member.image}
             alt={member.name}
             className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+            width={200}
+            height={200}
+        
             // Use React.SyntheticEvent<HTMLImageElement> for the event type
             onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
               e.currentTarget.onerror = null;
