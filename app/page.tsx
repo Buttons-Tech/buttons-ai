@@ -5,7 +5,7 @@ import React, { useState, useCallback, FC, FormEvent, useEffect } from "react";
 // import washpro from "../public/image/washpro.jpeg";
 import ProductCard from "./components/ProductCard";
 import ProcessCard from "./components/ProcessCard";
-import Team from "./components/Team";
+// import Team from "./components/Team";
 import JoinUs from "./components/JoinUs";
 
 // --- BRANDING & DESIGN SYSTEM (Pulled from Design Brief) ---
@@ -523,7 +523,7 @@ const Home: FC = () => {
 
       </section>
       <section id="team">
-              <Team/>
+              {/* <Team/> */}
       </section>
       <section id="team">
               <JoinUs />
