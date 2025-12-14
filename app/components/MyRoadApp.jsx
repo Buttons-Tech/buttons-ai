@@ -55,7 +55,7 @@ function MyRoadApp() {
 
   // --- LOGIC: WhatsApp Checkout ---
   const handleCheckout = () => {
-    const phoneNumber = "2348000000000"; // REPLACE WITH YOUR NUMBER
+    const phoneNumber = "2349066596603"; // REPLACE WITH YOUR NUMBER
     const address = prompt("Please enter your House Number (e.g., Block 5, Flat 2):");
     
     if (!address) return;
