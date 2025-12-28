@@ -60,7 +60,7 @@ function MyRoadApp() {
     
     if (!address) return;
 
-    let message = `*Order for [Road Name]*\n\n`;
+    let message = `*Order for [Isuti Road]*\n\n`;
     cart.forEach(item => {
       message += `▪️ ${item.qty}x ${item.name} - ₦${(item.price * item.qty).toLocaleString()}\n`;
     });
