@@ -59,42 +59,45 @@ export default function ProductDiscovery() {
           link="#"
         />
 
-        {/* Loud City - Podcast Integrated */}
-        <div className="relative group bg-slate-900 p-4 rounded-2xl border border-slate-800 shadow-xl overflow-hidden">
-           {/* Background Decoration */}
-           <div className="absolute top-[-20px] right-[-20px] w-24 h-24 bg-purple-600/20 rounded-full blur-2xl"></div>
-           
-           <div className="flex gap-4 relative z-10">
-            <div className="bg-purple-500 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-purple-500/20">
-              <Mic2 className="text-white" size={24} />
-            </div>
-            <div className="flex-1">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-bold text-white">Loud City</h3>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-bold text-purple-400 uppercase tracking-tight">Hear the pulse of Lagos</span>
-                    <span className="flex h-1.5 w-1.5 rounded-full bg-green-500 animate-ping"></span>
-                  </div>
-                </div>
-                <a href={spotifyLink} target="_blank" className="bg-white/10 p-2 rounded-full text-white hover:bg-white/20">
-                  <Play size={14} fill="white" />
-                </a>
-              </div>
-              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                The city's biggest podcast app. New episode: "Navigating Lagos Traffic Secrets"
-              </p>
-              
-              <a 
-                href={spotifyLink} 
-                target="_blank" 
-                className="mt-3 inline-flex items-center gap-2 text-[11px] font-bold text-white bg-green-600 px-3 py-1.5 rounded-full hover:bg-green-500 transition-colors"
-              >
-                Listen on Spotify <ArrowRight size={12} />
-              </a>
-            </div>
+       {/* Loud City - Podcast Integrated */}
+<div className="relative group bg-slate-900 p-4 rounded-2xl border border-slate-800 shadow-xl overflow-hidden">
+  {/* Background Decoration */}
+  <div className="absolute top-[-20px] right-[-20px] w-24 h-24 bg-purple-600/20 rounded-full blur-2xl"></div>
+  
+  <div className="flex gap-4 relative z-10">
+    <div className="bg-purple-500 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-purple-500/20">
+      <Mic2 className="text-white" size={24} />
+    </div>
+    <div className="flex-1">
+      <div className="flex justify-between items-start">
+        <div>
+          <h3 className="font-bold text-white">Loud City</h3>
+          <div className="flex items-center gap-2">
+            {/* FIXED: Using &apos; for the apostrophe */}
+            <span className="text-[10px] font-bold text-purple-400 uppercase tracking-tight">Hear the pulse of Lagos</span>
+            <span className="flex h-1.5 w-1.5 rounded-full bg-green-500 animate-ping"></span>
           </div>
         </div>
+        <a href={spotifyLink} target="_blank" className="bg-white/10 p-2 rounded-full text-white hover:bg-white/20">
+          <Play size={14} fill="white" />
+        </a>
+      </div>
+      {/* FIXED: Using &apos; for ' and &quot; for " */}
+      <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+        The city&apos;s biggest podcast app. New episode: &quot;Navigating Lagos Traffic Secrets&quot;
+      </p>
+      
+      <a 
+        href={spotifyLink} 
+        target="_blank" 
+        className="mt-3 inline-flex items-center gap-2 text-[11px] font-bold text-white bg-green-600 px-3 py-1.5 rounded-full hover:bg-green-500 transition-colors"
+      >
+        Listen on Spotify <ArrowRight size={12} />
+      </a>
+    </div>
+  </div>
+</div>
+
       </section>
     </div>
   );
