@@ -55,8 +55,8 @@ export default function LandingPage() {
         <section className="mt-12 bg-blue-900 rounded-3xl p-8 text-center text-white">
           <h3 className="text-xl font-bold mb-2">Built for the Neighborhood</h3>
           <p className="text-blue-100 text-sm mb-6">
-            We vet every vendor on the road so you don't have to. Real quality, guaranteed.
-          </p>
+{`            We vet every vendor on the road so you don't have to. Real quality, guaranteed.
+`}          </p>
           <div className="flex justify-around items-center opacity-80 text-xs">
             <div>🚀 20min Delivery</div>
             <div>|</div>

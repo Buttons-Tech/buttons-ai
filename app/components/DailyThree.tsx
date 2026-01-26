@@ -1,4 +1,4 @@
-import { Car, CloudRain, TrendingUp } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 
 export default function DailyThree() {
   return (
