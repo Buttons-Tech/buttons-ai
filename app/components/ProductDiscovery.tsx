@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, GraduationCap, Mic2, ArrowRight, Play } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ProductDiscovery() {
   const isWeekend = new Date().getDay() === 0 || new Date().getDay() === 6;
@@ -10,10 +11,11 @@ export default function ProductDiscovery() {
   return (
     <div className="space-y-6 pb-10">
       {/* 1. Dynamic Weekend Section */}
+      <Link href="/">
       <section className="bg-gradient-to-br from-indigo-600 to-blue-700 rounded-3xl p-5 shadow-lg text-white mx-1">
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-bold text-lg">
-            {isWeekend ? "Weekend Vibe" : "Weekend Prep"}
+            {isWeekend ? "Dreambox  Tutorial" : "Dreambox Club"}
           </h2>
           <span className="text-[10px] bg-white/20 px-2 py-1 rounded-full uppercase font-bold animate-pulse">
             {isWeekend ? "Live Now" : "Coming Up"}
@@ -22,16 +24,16 @@ export default function ProductDiscovery() {
         
         <div className="grid grid-cols-2 gap-3">
           <div className={`p-3 rounded-xl border ${isWeekend ? 'bg-white/20 border-white/30' : 'bg-white/5 border-white/10'}`}>
-            <p className="text-[10px] text-blue-100 uppercase font-bold">Saturday</p>
-            <p className="text-sm font-medium">Owambe & Groceries</p>
+            <p className="text-[10px] text-blue-100 uppercase font-bold">Tuesdays</p>
+            <p className="text-sm font-medium">Little Treasures School</p>
           </div>
           <div className={`p-3 rounded-xl border ${isWeekend ? 'bg-white/20 border-white/30' : 'bg-white/5 border-white/10'}`}>
-            <p className="text-[10px] text-blue-100 uppercase font-bold">Sunday</p>
-            <p className="text-sm font-medium">Rest & School Prep</p>
+            <p className="text-[10px] text-blue-100 uppercase font-bold">Thursdays</p>
+            <p className="text-sm font-medium">Richfield School</p>
           </div>
         </div>
       </section>
-
+</Link>
       {/* 2. Product Showcase */}
       <section className="space-y-4">
         <div className="flex items-center justify-between px-2">

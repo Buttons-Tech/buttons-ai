@@ -2,6 +2,7 @@ import DailyThree from './components/DailyThree';
 import PointTheWay from './components/PointTheWay';
 import WeeklyPlanner from './components/WeeklyPlanner';
 import ProductDiscovery from './components/ProductDiscovery';
+import LandingPage from './components/LandingPage';
 
 export default function Home() {
   return (
@@ -16,10 +17,13 @@ export default function Home() {
 
       <main className="p-4 space-y-4">
         <DailyThree />
+        <LandingPage />
         <PointTheWay />
         <WeeklyPlanner />
         <hr className="border-slate-200 my-4" />
+      
         <ProductDiscovery />
+      
       </main>
     </div>
   );
