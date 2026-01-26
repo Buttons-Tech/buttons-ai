@@ -35,7 +35,7 @@ export default function LandingPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {services.map((s) => (
-            <div key={s.id} className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+            <div key={s.id} className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col items-start gap-4">
               <div className="bg-gray-50 p-3 rounded-lg">
                 {s.icon}
               </div>
