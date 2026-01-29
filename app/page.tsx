@@ -88,11 +88,11 @@ export default function LandingPage() {
       <section className="p-8 bg-black text-white mt-10 mb-20 rounded-t-[3rem]">
         <div className="flex flex-col items-center text-center">
           <div className="w-24 h-24 rounded-full border-4 border-[#FFEB3B] overflow-hidden mb-4">
-            <img src="/your-photo.jpg" alt="Founder" className="object-cover w-full h-full" />
+            <img src="/my-photo.jpg" alt="Founder" className="object-cover w-full h-full" />
           </div>
           <h2 className="text-2xl font-black uppercase italic text-[#FFEB3B]">The Founder's Promise</h2>
           <p className="mt-4 text-gray-300 text-sm leading-relaxed max-w-md">
-            "I'm a Software Engineer and your neighbor. I built **Buttons** to fix the stress of Isuti Road. No middlemen, just tech-driven service you can trust."
+            "As a Software Engineer and your Neighbor. I built **Buttons** to fix the stress of Isuti Road. No middlemen, just tech-driven service you can trust."  @ohakwechi
           </p>
           <button className="mt-6 border-2 border-[#FFEB3B] text-[#FFEB3B] px-6 py-2 font-bold uppercase hover:bg-[#FFEB3B] hover:text-black transition-all">
             Talk to me on WhatsApp
