@@ -7,6 +7,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
+import WhatsAppFloat from "./components/WhatsAppFloat";
+import ResearchModal from "./components/ResearchModal";
 
 interface ServiceCardProps {
   title: string;
@@ -105,8 +107,8 @@ export default function LandingPage() {
               height={96}
             />
           </div>
-          {`          <h2 className="text-2xl font-black uppercase italic text-[#FFEB3B]">The Founder's Promise</h2>
-`}{" "}
+          <h2 className="text-2xl font-black uppercase italic text-[#FFEB3B]">The Founder&apos;s Promise</h2>
+
           <p className="mt-4 text-gray-300 text-sm leading-relaxed max-w-md">
             {`            "As a Software Engineer and your Neighbor. I built **Buttons** to fix the stress of Isuti Road. No middlemen, just tech-driven service you can trust."  @ohakwechi
 `}{" "}
@@ -115,6 +117,8 @@ export default function LandingPage() {
             Talk to me on WhatsApp
           </button>
         </div>
+        <WhatsAppFloat/>
+        <ResearchModal/>
       </section>
     </div>
   );
