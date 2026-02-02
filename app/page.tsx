@@ -5,10 +5,12 @@ import {
   Flame,
   ShoppingBag,
   ArrowRight,
+  Printer,
 } from "lucide-react";
 import Image from "next/image";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import ResearchModal from "./components/ResearchModal";
+import Link from "next/link";
 
 interface ServiceCardProps {
   title: string;
@@ -77,13 +79,15 @@ export default function LandingPage() {
         />
 
         {/* TECH CONCIERGE (Your current active skill) */}
+        <Link href="https://wa.me/p/26105207139084147/2349066596603">
         <ServiceCard
-          title="Tech Fix"
-          sub="Software, Security, & High-End Gadgets."
+          title="Tech Gadgets"
+          sub="Headphones, Iphones, Laptops..."
           icon={<Smartphone size={32} />}
           status="Live Chat"
           color="bg-[#FFEB3B]"
         />
+        </Link>
 
         {/* MARKET BUNDLE */}
         <ServiceCard
@@ -93,6 +97,15 @@ export default function LandingPage() {
           status="Coming Soon"
           color="bg-white"
         />
+        <Link href="https://wa.me/p/33936692562588796/2349066596603">
+        <ServiceCard
+          title="Printing Service"
+          sub="Print your documents, photos, and more."
+          icon={<Printer size={32} />}  
+          status="Live Chat"
+          color="bg-[#FFEB3B]"
+        />
+        </Link>
       </main>
 
       {/* 4. THE TRUST SECTION (YOU) */}
@@ -113,11 +126,13 @@ export default function LandingPage() {
             {`            "As a Software Engineer and your Neighbor. I built **Buttons** to fix the stress of Isuti Road. No middlemen, just tech-driven service you can trust."  @ohakwechi
 `}{" "}
           </p>
+<Link href="https://x.com/ohakwechi" target="_blank" rel="noopener noreferrer">
           <button className="mt-6 border-2 border-[#FFEB3B] text-[#FFEB3B] px-6 py-2 font-bold uppercase hover:bg-[#FFEB3B] hover:text-black transition-all">
-            Talk to me on WhatsApp
+            Talk to me on Twitter
           </button>
+</Link>
         </div>
-        <WhatsAppFloat/>
+        <WhatsAppFloat/>  
         <ResearchModal/>
       </section>
     </div>
