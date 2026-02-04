@@ -61,14 +61,15 @@ export default function LandingPage() {
       {/* 3. THE "BUTTONS" GRID - DEMAND CAPTURE */}
       <main className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 -mt-10 relative z-20">
         {/* POS / CASH SERVICE */}
+        <Link href="https://wa.me/p/33436819019299024/2349066596603">
         <ServiceCard
           title="Cash To Door"
-          sub="Avoid ATM queues. We bring the POS to you."
+          sub="Avoid Unverified POS. We bring the POS to you."
           icon={<Banknote size={32} />}
-          status="Coming Soon"
+          status="Live Chat"
           color="bg-[#FFEB3B]"
         />
-
+        </Link>
         {/* GAS SERVICE */}
         <ServiceCard
           title="Gas Refill"

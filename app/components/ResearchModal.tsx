@@ -36,7 +36,7 @@ export default function ResearchModal() {
 
         <textarea 
           placeholder="E.g. No ATM has cash, or Gas is too heavy..."
-          className="w-full bg-white border-4 border-black p-4 font-bold text-lg outline-none focus:ring-4 ring-green-600/30 mb-4"
+          className="w-full bg-white border-4 text-black   border-black p-4 font-bold text-lg outline-none focus:ring-4 ring-green-600/30 mb-4"
           rows={3}
           value={thought}
           onChange={(e) => setThought(e.target.value)}
