@@ -26,7 +26,7 @@ export default function LandingPage() {
       {/* 1. BLINKING MARQUEE TOP BAR */}
       <div className="bg-black text-[#FFEB3B] py-2 overflow-hidden border-b-2 border-black">
         <div className="animate-marquee whitespace-nowrap font-black uppercase text-sm italic">
-          ⚠️ Buttons is coming to ISUTI road • Join the Priority List • ⚠️
+          ⚠️ Buttons is serving ISUTI road • Join the Priority List • ⚠️
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export default function LandingPage() {
         {/* POS / CASH SERVICE */}
         <Link href="https://wa.me/p/33436819019299024/2349066596603">
         <ServiceCard
-          title="Cash To Door"
+          title="POS on Demand"
           sub="Avoid Unverified POS. We bring the POS to you."
           icon={<Banknote size={32} />}
           status="Live Chat"

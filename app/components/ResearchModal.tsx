@@ -6,6 +6,32 @@ export default function ResearchModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [thought, setThought] = useState('');
 
+
+  // Inside your Next.js component
+const handleSubmit = async (thought: string) => {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+  try {
+    const response = await fetch(`${API_URL}/leads`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        userThought: thought,
+        // phoneNumber: "Captured from your input state",
+        // serviceInterested: "Cash"
+      }),
+    });
+
+    if (response.ok) {
+      console.log("Success! Data is now in your NestJS database.");
+    }
+  } catch (error) {
+    console.error("Connection failed. Is the NestJS server running?", error);
+  }
+};
+
   useEffect(() => {
     // Show pop-up after 4 seconds
     const timer = setTimeout(() => setIsOpen(true), 4000);
@@ -44,6 +70,7 @@ export default function ResearchModal() {
 
         <button 
           onClick={() => {
+              handleSubmit(thought); // Call the function to send data to NestJS
             console.log("Logged Demand:", thought);
             setIsOpen(false); 
             // Here you'll trigger your MongoDB save
