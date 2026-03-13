@@ -45,7 +45,7 @@ const EasterEventCard = () => {
 
         {/* Features List */}
         <div className="space-y-2">
-          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">What's Happening</p>
+          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{`What's Happening`}</p>
           <ul className="text-sm text-slate-700 grid grid-cols-1 gap-1">
             <li className="flex items-center gap-2">✨ Free Drinks & Chops</li>
             <li className="flex items-center gap-2">🎁 First 20 guests get gifts</li>
