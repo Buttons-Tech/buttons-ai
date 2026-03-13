@@ -11,6 +11,7 @@ import Image from "next/image";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import ResearchModal from "./components/ResearchModal";
 import Link from "next/link";
+import EasterEventCard from "./components/EasterEventCard";
 
 interface ServiceCardProps {
   title: string;
@@ -56,6 +57,7 @@ export default function LandingPage() {
             Your neighborhood services, <br /> One button away.
           </p>
         </div>
+
       </section>
 
       {/* 3. THE "BUTTONS" GRID - DEMAND CAPTURE */}
@@ -108,6 +110,8 @@ export default function LandingPage() {
         />
         </Link>
       </main>
+
+      <EasterEventCard  />
 
       {/* 4. THE TRUST SECTION (YOU) */}
       <section className="p-8 bg-black text-white mt-10 mb-20 rounded-t-[3rem]">

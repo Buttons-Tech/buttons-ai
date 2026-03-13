@@ -80,7 +80,7 @@ const handleSubmit = async (thought: string) => {
           Tell Buttons
         </button>
         
-        <p className="text-center mt-4 text-[10px] font-bold uppercase opacity-60">
+        <p className="text-center mt-4 text-[10px] text-black font-bold uppercase opacity-60">
           Skip to browse services
         </p>
       </div>
