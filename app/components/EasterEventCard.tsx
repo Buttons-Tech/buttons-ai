@@ -36,11 +36,13 @@
                         ₦10,000 Early Bird
                         </p>
                     </div>
-                    <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">Female</p>
+                    <Link href="https://forms.gle/JPA8CAKaJwZukHBL7">  
+                    <div className="bg-green-200 p-4 rounded-2xl border border-slate-100">
+                        <p className="text-xs text-black font-medium uppercase tracking-wider">Female</p>
                         <p className="text-xl font-bold text-green-600 uppercase">Free</p>
-                        <p className="text-[10px] text-slate-400 mt-1 italic">Registration req.</p>
+                        <p className="text-[10px] text-slate-900 mt-1 italic">Registration req.</p>
                     </div>
+                        </Link>
                     </div>
 
                     {/* Features List */}
