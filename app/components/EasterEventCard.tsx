@@ -26,8 +26,8 @@ const EasterEventCard = () => {
         // Using phone number as a virtual email for Paystack
         const virtualEmail = `${phone}@buttons-tech.com`;
 
-        // @ts-ignore
-        const handler = window.PaystackPop.setup({
+// @ts-expect-error - PaystackPop is loaded via external script        
+const handler = window.PaystackPop.setup({
 key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY, // Pulls from .env            
 email: virtualEmail,
             amount: 10000 * 100, // 10,000 Naira in kobo
