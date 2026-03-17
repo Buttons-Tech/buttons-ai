@@ -137,7 +137,11 @@ export default function LandingPage() {
           </button>
 </Link>
         </div>
-        <WhatsAppFloat/>  
+        <div className="flex">
+
+        <WhatsAppFloat/> 
+        {/* <WhatsAppFloat/>   */}
+        </div>
         <ResearchModal/>
       </section>
     </div>
